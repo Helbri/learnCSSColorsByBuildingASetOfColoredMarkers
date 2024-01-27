@@ -44,17 +44,19 @@ h1 {
     /*blurRadius modifie la netteté du bord l'ombre. La valeur par défaut est 0 (net). Plus la valeur en px est importante plus le flou le sera.*/
     /*spreadRadius permet d'étendre d'avantage l'ombre*/
     background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
-    box-shadow: -5px -5px red;
+    box-shadow: 0 0 20px 0 rgba(83,14,14,0.8 );
 }
 
 /*sélecteur div "green"*/
 .green {
     /*couleur en Hexadecimal. De 00 (sombre) à FF (blancs) pour les valeurs "Red","Green","Blue"*/
     background: linear-gradient(#55680D, #71F53E, #116C31);
+    box-shadow: 0 0 20px 0 #3B7E20CC;
 }
 
 /*sélecteur div "blue"*/
 .blue {
+    /*couleur en hlsa hsla(teinte, saturation%, clarté%, canal alpha).*/
     background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
-    box-shadow: 0 0 0 5px blue;
+    box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
 }
