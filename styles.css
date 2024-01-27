@@ -40,7 +40,11 @@ h1 {
 .red {
     /*couleur en rgb. Valeurs de 255 à 0 (blanc à noir) pour les valeurs "Red","Green","Blue"*/
     /*par défaut, le linear-gradient produit un dégradé à proportions égales avec les couleurs affichées de manière horizontal, les unes au-dessus des autres*/
+    /*box-shadow: offsetX offsetY blurRadius spreadRadius color; box-shadow réalise une ombre. "offsetX" déplace l'ombre de gauche à droite (négatif->positif). "offsetY" déplace de haut en bas (négatif->positif). color est pour la couleur*/
+    /*blurRadius modifie la netteté du bord l'ombre. La valeur par défaut est 0 (net). Plus la valeur en px est importante plus le flou le sera.*/
+    /*spreadRadius permet d'étendre d'avantage l'ombre*/
     background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    box-shadow: -5px -5px red;
 }
 
 /*sélecteur div "green"*/
@@ -52,4 +56,5 @@ h1 {
 /*sélecteur div "blue"*/
 .blue {
     background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    box-shadow: 0 0 0 5px blue;
 }
